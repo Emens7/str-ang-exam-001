@@ -31,6 +31,8 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -127,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "str-ang-exam"
+  "defaultProject": "str-ang-exam",
+  "cli": {
+    "analytics": "f7300042-bc1d-4d7b-9645-60e33c9a1e4a"
+  }
 }
