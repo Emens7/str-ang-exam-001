@@ -1,3 +1,17 @@
+
+<div class="row m-4">
+  <div class="col-md-12">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+          <i class="fa fa-filter" aria-hidden="true"></i>
+        </span>
+      </div>
+      <input type="text" class="form-control" placeholder="filter by Name" [(ngModel)]="searchString">
+    </div>
+  </div>
+</div>
+
 <table class="table">
   <thead>
     <tr>
@@ -8,7 +22,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let hero of herolist | async">
+    <tr *ngFor="let hero of herolist | async | hero:searchString">
       <td>{{hero.id}}</td>
       <td>{{hero.name}}</td>
       <td>{{hero.superPower}}</td>
@@ -16,3 +30,5 @@
     </tr>
   </tbody>
 </table>
+
+

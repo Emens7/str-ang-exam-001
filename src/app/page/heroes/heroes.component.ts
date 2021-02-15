@@ -10,6 +10,8 @@ import { Hero } from '../../model/hero';
 })
 export class HeroesComponent implements OnInit {
 
+  searchString: string = "";
+
   herolist: BehaviorSubject<Hero[]> = this.heroService.hero$;
 
   constructor(
@@ -18,5 +20,7 @@ export class HeroesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
 
 }

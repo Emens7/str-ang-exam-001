@@ -1,2 +1,4 @@
 [0215/182410.034:ERROR:registration_protocol_win.cc(102)] CreateFile: A rendszer nem találja a megadott fájlt. (0x2)
 [0215/182755.136:ERROR:registration_protocol_win.cc(102)] CreateFile: A rendszer nem találja a megadott fájlt. (0x2)
+[0215/201307.762:ERROR:registration_protocol_win.cc(102)] CreateFile: A rendszer nem találja a megadott fájlt. (0x2)
+[0215/204518.082:ERROR:registration_protocol_win.cc(102)] CreateFile: A rendszer nem találja a megadott fájlt. (0x2)
