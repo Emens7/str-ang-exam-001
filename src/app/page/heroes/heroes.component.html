@@ -15,14 +15,14 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Id:</th>
-      <th>Name:</th>
-      <th>SuperPower:</th>
-      <th>Address:</th>
+      <th (click)="onColumnSelect('id')">Id:</th>
+      <th (click)="onColumnSelect('name')">Name:</th>
+      <th (click)="onColumnSelect('superPower')">SuperPower:</th>
+      <th (click)="onColumnSelect('address')">Address:</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let hero of herolist | async | hero:searchString">
+    <tr *ngFor="let hero of herolist | async | hero:searchString | sorter:columnKey">
       <td>{{hero.id}}</td>
       <td>{{hero.name}}</td>
       <td>{{hero.superPower}}</td>

@@ -8,6 +8,7 @@ import { HomeComponent } from './page/home/home.component';
 import { HeroesComponent } from './page/heroes/heroes.component';
 import { HeroPipe } from './pipe/hero.pipe';
 import {FormsModule} from '@angular/forms';
+import { SorterPipe } from './pipe/sorter.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {FormsModule} from '@angular/forms';
     NavigationComponent,
     HomeComponent,
     HeroesComponent,
-    HeroPipe
+    HeroPipe,
+    SorterPipe
   ],
   imports: [
     BrowserModule,

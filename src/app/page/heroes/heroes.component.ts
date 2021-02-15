@@ -12,6 +12,8 @@ export class HeroesComponent implements OnInit {
 
   searchString: string = "";
 
+  columnKey: string = "";
+
   herolist: BehaviorSubject<Hero[]> = this.heroService.hero$;
 
   constructor(
@@ -21,6 +23,8 @@ export class HeroesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+  onColumnSelect(key: string) {
+    this.columnKey = key;
+  }
 
 }
